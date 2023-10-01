@@ -26,14 +26,14 @@ void shell_sort(int *array, size_t size)
 			j = i;
 			while (j >= gap && array[j - gap] > array[j])
 			{
-				/*Swap elements using a temporary variable */
+				/* Swap elements using a temporary variable */
 				temp = array[j];
 				array[j] = array[j - gap];
 				array[j - gap] = temp;
 				j -= gap;
 			}
 		}
-		/*Print the array after each pass */
+		/* Print the array after each pass */
 		print_array(array, size);
 	}
 }
